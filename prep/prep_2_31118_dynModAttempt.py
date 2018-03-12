@@ -1,4 +1,4 @@
-# this program just tries to predict something simple based on the iris dataset
+# this program attemps to implement a dynamically selective prediction algorithm
 
 # Load libraries
 import pandas
@@ -56,23 +56,30 @@ models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
 models.append(('SVM', SVC()))
 # evaluate each model in turn
+# after evaluation, dynamically select the correct model to use
+# formula for adjusted/normalized success: 1-(1/(mean/std))
+success = []
 results = []
 names = []
 for name, model in models:
 	kfold = model_selection.KFold(n_splits=10, random_state=seed)
 	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+	success.append((1-float((1/(cv_results.mean()/cv_results.std()))), model, name))
 	results.append(cv_results)
 	names.append(name)
 	msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
 	print(msg)
 
+(rate, best_model, name) = (max(success)[0], max(success)[1], max(success)[2])
+print rate, best_model, name
+
 print type(X_validation)
 numpy.append(X_validation, [5.5, 2.4, 3.8, 1.1] )
 
 # Make predictions on validation dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(numpy.array([5.5, 2.4, 3.8, 1.5]).reshape(1,-1))
+neurNet = best_model
+neurNet.fit(X_train, Y_train)
+predictions = neurNet.predict(numpy.array([5.5, 2.4, 3.8, 1.5]).reshape(1,-1))
 print X_validation
 print predictions
 print(accuracy_score(Y_validation, predictions))
