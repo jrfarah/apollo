@@ -64,6 +64,9 @@ def getValidation(dset, prediction_column_index):
 	return CC_train, CC_validation, PC_train, PC_validation
 
 
+def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation):
+	
+
 def Predict(dset, prediction_column_index):
 	'''	coalesces all of the other functions into one thing; 
 		will return prediction
@@ -71,6 +74,10 @@ def Predict(dset, prediction_column_index):
 	# split the datasets between validation and prediction
 	CC_train, CC_validation, PC_train, PC_validation = getValidation(dset, prediction_column_index)
 
-	
+	# spot check the various algorithms to determine the best model for use in this case
+
+
+
+
 
 
