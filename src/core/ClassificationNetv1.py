@@ -7,7 +7,7 @@
 # from there every part of this will be expanded and customized
 #
 # things that are passed into the function: 
-# - dataset, array of names
+# - dataset, array of names?, predidction set, prediction column index
 ###################################################################################
 
 valve = ""
@@ -35,12 +35,15 @@ from 	sklearn.neighbors 				import KNeighborsClassifier
 from 	sklearn.discriminant_analysis 	import LinearDiscriminantAnalysis
 from 	sklearn.naive_bayes 			import GaussianNB
 from 	sklearn.svm 					import SVC
+from 	sklearn 						import linear_model
+from 	sklearn 						import svm
 
 # METHODS ########################################################################
 
 def getValidation(dset, prediction_column_index):
 	'''	extract a validation dataset from the full one
 	'''
+	print type(dset)
 	reduced_dataset = dset.values
 
 	# split the array into two arrays--one containing the contemplation information and the other containing the information we want to predict
@@ -53,7 +56,7 @@ def getValidation(dset, prediction_column_index):
 	print contemplation_columns	# CC
 
 	# percentage of data to be used for validation
-	validation_size = 0.20
+	validation_size = 0.01
 
 	# set random seed for initial matrices
 	seed = 7
