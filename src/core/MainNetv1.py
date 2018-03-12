@@ -64,10 +64,57 @@ def getValidation(dset, prediction_column_index):
 	return CC_train, CC_validation, PC_train, PC_validation
 
 
-def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation):
-	
+def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation, scoring = 'accuracy'):
+	''' checks which algorithm is most effective on the dataset '''
+	models = []
+	models.append(('LR', 	LogisticRegression()))
+	models.append(('LDA', 	LinearDiscriminantAnalysis()))
+	models.append(('KNN', 	KNeighborsClassifier()))
+	models.append(('CART', 	DecisionTreeClassifier()))
+	models.append(('NB', 	GaussianNB()))
+	models.append(('SVM', 	SVC()))
 
-def Predict(dset, prediction_column_index):
+	seed = 7
+
+	# evaluate each model in turn
+	# after evaluation, dynamically select the correct model to use
+	# formula for adjusted/normalized success: 1-(1/(mean/std))
+	success = []
+	results = []
+	names 	= []
+	for name, model in models:
+		# test the models on a subset of the dataset
+		kfold 		= model_selection.KFold(n_splits=10, random_state=seed)
+		cv_results 	= model_selection.cross_val_score(model, CC_train, PC_train, cv=kfold, scoring=scoring)
+		# calculate the success of the model (weighted success)
+		success.append((1-float((1/(cv_results.mean()/cv_results.std()))), model, name))
+		results.append(cv_results)
+		names.append(name)
+		msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+		print(msg)
+
+	(rate, best_model, name) = (max(success)[0], max(success)[1], max(success)[2])
+	return rate, best_model, name
+
+def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train):
+	''' generates the neural net and thinks about the data '''
+
+	# generates the neural network based on the best mdoel
+	neurNet = best_model
+
+	# trains the neural network
+	neurNet.fit(CC_train, PC_train)
+
+	# formats the prediction set into a numpy array and reshapes it
+	prediction_set = numpy.array(prediction_set).reshape(1,-1)
+
+	# think
+	predictions = neurNet.predict(prediction_set)
+
+	return predictions
+
+
+def Predict(dset, prediction_column_index, prediction_set):
 	'''	coalesces all of the other functions into one thing; 
 		will return prediction
 	'''
@@ -75,9 +122,9 @@ def Predict(dset, prediction_column_index):
 	CC_train, CC_validation, PC_train, PC_validation = getValidation(dset, prediction_column_index)
 
 	# spot check the various algorithms to determine the best model for use in this case
+	(rate, best_model, name) = spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation)
 
-
-
-
-
-
+	# think 
+	result = spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train)
+	return result
+	

@@ -15,4 +15,5 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 # put the table into a PANDAS dataset object
 dataset = pandas.read_csv(url, names=names)
 
-MainNetv1.Predict(dataset, 4)
+prediction = MainNetv1.Predict(dataset, 4, [5.5, 2.4, 3.8, 1.5])
+print prediction
