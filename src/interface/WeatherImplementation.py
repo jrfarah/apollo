@@ -84,7 +84,23 @@ def getTempAndPrecip(year, month, day):
 	precip = float(precip)
 	# print precip
 
-	return int(day_of_year), max_temp, min_temp, precip
+	# get the maximum temperature
+	humidity_string = (subprocess.check_output(grep_command.format("Average Humidity"), shell=True)).split()[3]
+
+	l = []
+	for char in humidity_string:
+		try:
+			l.append(int(char))
+		except ValueError:
+			continue
+
+	humidity = ""
+	for elem in l:
+		humidity = humidity+str(elem)
+
+	humidity = float(humidity)
+
+	return int(day_of_year), max_temp, min_temp, precip, humidity
 
 
 
@@ -96,10 +112,10 @@ prediction_dataset_list_nosnow = [[347, 36, 22], [348, 30, 19], [349, 27, 17]]
 automated_tests = []
 
 
-filepath = "../../training_sets/reduced_weather_data.data"
-names = ["Day of the year","High","low","Snow or not"]
+filepath = "../../training_sets/humidity_set_2016_2017.csv"
+names = ["Day of the year","High","low", "humidity", "Snow or not"]
 dataset = pandas.read_csv(filepath, names=names)
-prediction = ClassificationNetv1.Predict(dataset, 3, [4, 30, 22])
+# prediction = ClassificationNetv1.Predict(dataset, 3, [4, 30, 22])
 # print "Probability of precipitation on selected day: ", prediction
 
 # correct = 0
@@ -135,7 +151,7 @@ prediction = ClassificationNetv1.Predict(dataset, 3, [4, 30, 22])
 # n = number of days you want to test
 correct = 0
 total = 0
-n = 20
+n = 50
 for i in range(n):
 	try:
 		y = random.randint(2008, 2016)
@@ -143,8 +159,8 @@ for i in range(n):
 		d = random.randint(1,28)
 
 		# get the max, min, precip for this day
-		(day, maxT, minT, p) = getTempAndPrecip(y,m,d)
-		automated_tests.append([day, maxT, minT, p])
+		(day, maxT, minT, p, h) = getTempAndPrecip(y,m,d)
+		automated_tests.append([day, maxT, minT, h, p])
 
 	except:
 		print "Problem! continuing anyway"
@@ -152,13 +168,13 @@ for i in range(n):
 
 for test in automated_tests:
 	total += 1
-	submit = test[0:3]
-	if test[3] > 0:
+	submit = test[0:4]
+	if test[4] > 0:
 		result = 1
 	else:
 		result = 0
 
-	prediction = ClassificationNetv1.Predict(dataset, 3, submit)
+	prediction = ClassificationNetv1.Predict(dataset, 4, submit)
 	if int(prediction) == int(result):
 		correct += 1
 		print "correct"
