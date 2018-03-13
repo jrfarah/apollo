@@ -52,11 +52,11 @@ def getValidation(dset, prediction_column_index):
 	contemplation_columns 	= numpy.delete(	reduced_dataset, 
 											prediction_column_index, 
 											axis = 1 )
-	print prediction_column 	# PC
-	print contemplation_columns	# CC
+	# print prediction_column 	# PC
+	# print contemplation_columns	# CC
 
 	# percentage of data to be used for validation
-	validation_size = 0.01
+	validation_size = 0.23
 
 	# set random seed for initial matrices
 	seed = 7

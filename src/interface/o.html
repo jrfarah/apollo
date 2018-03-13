@@ -1,0 +1,2552 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js "> <!--<![endif]-->
+	<head>
+		<title>Weather History for Boston, MA | Weather Underground</title>
+		<link href="//icons.wxug.com/" rel="dns-prefetch" />
+		<link href="//api-ak.wunderground.com/" rel="dns-prefetch" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+<meta http-equiv="cleartype" content="on">
+	<meta name="description" content="Weather History for Logan International, MA - Get Weather History data by the day, week, month, or year with details like temperature, humidity, wind, etc. on Weather Underground." />
+	<meta name="keywords" content="weather history Logan International, historical weather, weather almanac, past weather, previous weather, temperature history, rain history, snow history, wind history" />
+<meta name="apple-itunes-app" content="app-id=486154808, affiliate-data=at=1010lrYB&ct=website_wu" />
+<meta name="fb-app-id" content="325331260891611" />
+<meta name="fb-channel-url" content="//www.wunderground.com/php/lib/fb_sdk/channel.php" />
+<meta name="wui-member-logged-in" content="false" />
+<meta name="com.silverpop.brandeddomains" content="www.pages02.net,www.wunderground.com" />
+	<link rel="canonical" href="https://www.wunderground.com/history/airport/KBOS/2015/12/26/DailyHistory.html" />
+	<link rel="apple-touch-icon" href="//icons.wxug.com/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="//icons.wxug.com/favicon.png"/>
+	<link rel="stylesheet" href="//icons.wxug.com/css/wu4/core.css?v=2017041301">
+	<link rel="stylesheet" href="//icons.wxug.com/css/wu4/omnibus.css?v=2018022701">
+	<link rel="stylesheet" href="//icons.wxug.com/css/wu4/history.css?v=2015100201" />
+	<script src="//icons.wxug.com/scripts/modernizr/2.8.2/modernizr.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="//icons.wxug.com/scripts/wui-js/2.0.3/wui.min.js"></script>
+		<script src="//icons.wxug.com/scripts/wui.login.min.js?v=1.3.18"></script>
+		<script type="text/javascript">
+	if (typeof Object.assign != 'function') {
+	 Object.assign = function(target) {
+	 'use strict';
+	 if (target == null) {
+	 throw new TypeError('Cannot convert undefined or null to object');
+	 }
+	 target = Object(target);
+	 for (var index = 1; index < arguments.length; index++) {
+	      var source = arguments[index];
+	      if (source != null) {
+	        for (var key in source) {
+	          if (Object.prototype.hasOwnProperty.call(source, key)) {
+	            target[key] = source[key];
+	          }
+	        }
+	      }
+	    }
+	    return target;
+	  };
+	}
+
+  if (window.innerWidth >= 1025) {
+		var ad_unit = 'web_wunderground_us/local_forecasts/historical';
+		var ad_plat = 'wund';
+		var wfx_id = 'B1CC73';
+		var pos1 = 'wx_ws';
+		var pos1Sizes = [[728,90],[728,91],[970,90],[970,250]];
+		var pos2Id = 'div-gpt-ad-615639597871654305-2';
+		var pos2 = 'wx_300var';
+		var pos2Sizes = [[300,600],[300,250],[300,251]];
+		var pos3Id = 'div-gpt-ad-615639597871654305-3';
+		var pos3 = 'wx_bot300';
+		var pos3Sizes = [[300,250],[300,251]];
+		var pos4Id = 'div-gpt-ad-615639597871654305-4';
+		var pos4 = 'wx_mid300';
+		var pos4Sizes = [[300,250],[300,251]];
+		var pos5Id = 'div-gpt-ad-615639597871654305-5';
+		var pos5 = 'wx_midldr';
+		var pos5Sizes = [[728,90],[728,91]];
+		var pos6 = 'wx_botldr';
+		var pos6Sizes = [[728,90],[728,91]];
+	}
+  else if (window.innerWidth >= 768) {
+		var ad_unit = 'tablet_wunderground_us/local_forecasts/historical';
+		var ad_plat = 'wund_tab';
+		var wfx_id = 'B1CC73';
+		var pos1 = 'wx_ws';
+		var pos1Sizes = [[728,90],[728,91],[728,92]];
+		var pos2Id = 'div-gpt-ad-615639597871654305-2';
+		var pos2 = 'wx_300var';
+		var pos2Sizes = [[300,250],[300,251]];
+		var pos3Id = 'div-gpt-ad-615639597871654305-3';
+		var pos3 = 'wx_bot300';
+		var pos3Sizes = [[300,250],[300,251]];
+		var pos4Id = 'div-gpt-ad-615639597871654305-4';
+		var pos4 = 'wx_mid300';
+		var pos4Sizes = [[300,250],[300,251]];
+		var pos5Id = 'div-gpt-ad-615639597871654305-5';
+		var pos5 = 'wx_midldr';
+		var pos5Sizes = [[728,90],[728,91]];
+		var pos6 = 'wx_botldr';
+		var pos6Sizes = [[728,90],[728,91],[728,92]];
+	}
+	else {
+		var adLimitMobile = 5;
+		var ad_unit = 'mobile_smart_wunderground_us/local_forecasts/historical';
+		var ad_plat = 'wund_mw';
+		var wfx_id = '5B3739';
+		var pos1 = 'mw_p1';
+		var pos1Sizes = [[320,50],[320,51]];
+		var pos2Id = 'div-gpt-ad-615639597871654305-2';
+		var pos2 = 'mw_p2';
+		var pos2Sizes = [[300,250],[300,251]];
+		var pos3Id = 'div-gpt-ad-615639597871654305-3';
+		var pos3 = 'mw_p3';
+		var pos3Sizes = [[300,250],[300,251]];
+		var pos4Id = 'div-gpt-ad-615639597871654305-4';
+		var pos4 = 'mw_p4';
+		var pos4Sizes = [[300,250],[300,251]];
+		var pos5Id = 'div-gpt-ad-615639597871654305-5';
+		var pos5 = 'mw_p5';
+		var pos5Sizes = [[300,250],[300,251]];
+	}
+  window.Adomik = window.Adomik || {};
+  Adomik.randomAdGroup = function() {
+  var rand = Math.random();
+  switch (false) {
+  case !(rand < 0.09): return "ad_ex" + (Math.floor(100 * rand));
+      case !(rand < 0.10): return "ad_bc";
+      default: return "ad_opt";
+    }
+  };
+
+	var isEdge = navigator.userAgent.indexOf('Edge') >=0;
+	var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+	var isFirefox = typeof InstallTrigger !== 'undefined';
+	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+	var isChrome = !!window.chrome && !isOpera && !isEdge;
+	var isIE = /*@cc_on!@*/false || !!document.documentMode;
+	var browser_type = null;
+	if (isFirefox) {
+		browser_type = 'wuff';
+	} else if (isSafari) {
+		browser_type = 'wusafari';
+	} else if (isChrome) {
+		browser_type = 'wuchrome'
+	} else if (isIE) {
+		browser_type = 'wuie';
+	} else if (isEdge) {
+		browser_type = 'wuedge';
+	}
+</script>
+<script src="//icons.wxug.com/scripts/ads-sdk/index.min.js?v=1.1" async></script>
+<script type="text/javascript">
+  // common metadata section
+  var refurl = {};
+  var adZone = '';
+	var locale = 'en-US';
+  var thirdParties = [{"id":"wfxtg","acctid":wfx_id,"timeout":500,"params":{"activeLocation":"02152"},"async":true},{"id":"criteo","netId":1458,"timeout":500,"async":true},{"id":"amznslots","amznId":1004,"async":true,"timeout":500,"iso":true},{"id":"lotame","clientId":2216,"async":true,"timeout":500}] || [];
+  var custParams = {
+	 "locale":"en_US",
+	 "lang":"EN",
+	 "dma":"000",
+	 "lat":"42.36416626",
+	 "lon":"-71.00499725",
+	 "loc":"",
+	 "zip":"02152",
+	 "ct":"Logan International",
+	 "st":"MA",
+	 "cnty":"Suffolk",
+	 "cc":"US",
+	 "countryName":"United States"
+	};
+  // common part for queue definition
+  window.TWC = window.TWC || {};
+  window.TWC.adUtils = window.TWC.adUtils || {};
+  window.twcMoney = window.twcMoney || {};
+  window.twcMoney.cmd = window.twcMoney.cmd || [];
+</script>
+<script type="text/javascript">
+	var preparePositions = [];
+	 preparePositions.push({
+  "id": "WX_WindowShade",
+  "pos": pos1,
+  "sizes": pos1Sizes
+		});
+ 	var adNum = 2;
+		if ((ad_plat === 'wund') || (ad_plat === 'wund_tab') || (adNum <= adLimitMobile && ad_plat === 'wund_mw')) {
+			preparePositions.push({
+				"id": pos2Id,
+				"pos": pos2,
+				"sizes": pos2Sizes
+			});
+		}
+		
+		adNum = 3;
+	
+		if ((ad_plat === 'wund') || (ad_plat === 'wund_tab') || (adNum <= adLimitMobile && ad_plat === 'wund_mw')) {
+			preparePositions.push({
+				"id": pos3Id,
+				"pos": pos3,
+				"sizes": pos3Sizes
+			});
+		}
+		
+		adNum = 4;
+	
+		if ((ad_plat === 'wund') || (ad_plat === 'wund_tab') || (adNum <= adLimitMobile && ad_plat === 'wund_mw')) {
+			preparePositions.push({
+				"id": pos4Id,
+				"pos": pos4,
+				"sizes": pos4Sizes
+			});
+		}
+		
+		adNum = 5;
+	
+		if ((ad_plat === 'wund') || (ad_plat === 'wund_tab') || (adNum <= adLimitMobile && ad_plat === 'wund_mw')) {
+			preparePositions.push({
+				"id": pos5Id,
+				"pos": pos5,
+				"sizes": pos5Sizes
+			});
+		}
+		
+		adNum = 6;
+	
+
+	
+		if ((ad_plat === 'wund') || (ad_plat === 'wund_tab') || (adNum <= adLimitMobile && ad_plat === 'wund_mw')) {
+  	    	preparePositions.push({
+			    "id": "div-gpt-ad-615639597871654305-bot",
+			    "pos": pos6,
+			    "sizes": pos6Sizes
+			});
+		}
+	
+
+  var customAdConfig = {
+    preparePositions: preparePositions,
+    getAdUnit: {
+    	adUnit: ad_unit,
+      networkCode: '/7646'
+    },
+    getCustParams: {
+			
+			excl: 'wund',
+      plat: ad_plat,
+			ad_g : Adomik.randomAdGroup(),
+			preempt : "y"
+    },
+
+    getClientBrowser: browser_type
+  };
+
+  var start = window.performance.now();
+
+  window.twcMoney.cmd.push(function() {
+    window.twcMoney
+      .moneyTree({ useLightSpeed: true, locale: locale, lsScriptUrl: '//js-sec.indexww.com/ht/p/182970-203800257961387.js' })
+      .start({
+        adZone: adZone,
+        locale: locale,
+        thirdParties: thirdParties,
+        custParams: custParams,
+        pageAdPositions: [],
+
+        staticAdPositions: [true],
+        processStatic: true,
+        adConfig: customAdConfig
+      });
+  });
+</script>
+	</head>
+	<body class="standard History-History city-page  ">
+		<div id="content-wrap" class="relative right-side-nav">
+		<nav id="feature-menu-mobile" class="sidebar">
+  <div class="sidebar-wrapper">
+  <ul class="side-main-nav nav-bar">
+  <li>
+  <a href="/login.asp">Log in</a>
+  </li>
+  <li>
+  <a href="/member/registration">Join</a>
+  </li>
+  </a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);"></a></li>
+  <li class="sidebar-heading no-link">
+	 Guten Tag&#33;
+</li>
+<li><a href="/member/membersettings.html">Member Settings</a></li>
+<li><a href="/email/mainmenu.php">My Email Alerts</a></li>
+<li><a href="/webcams/signup.html" class="brBot3">My Webcams</a></li>
+  <li><a href="/pwsonair/editstationlist.html">PWS OnAir</a></li>
+<li><a href="/email/logout.php">Sign Out</a></li>
+  </ul>
+  </li>
+  <li class="gotMore">
+  <a href="#">
+  <i class="fi-widget sidebar-icon"></i> Settings
+  </a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">Settings</a></li>
+  <ul class="button-group toggle radius">
+  <li><a onclick="wui.SetUnitToEnglish()" title="Switch to English" class="button selected">&deg;F</a></li>
+  <li><a onclick="wui.SetUnitToMetric()" title="Switch to Metric" class="button ">&deg;C</a></li>
+</ul>
+  </ul>
+  </li>
+  <li class="gotMore">
+  <a href="javascript:void(0);" class="maps">Maps & Radar</a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">Maps & Radar</a></li>
+  <li><a href="/weather-radar/" title="Radar Maps">Radar Maps</a></li>
+  <li><a href="/wundermap/?radar=1">Interactive Radar</a></li>
+  <li><a href="/wundermap/?sat=1">Interactive Satellite</a></li>
+  <li><a href="/wundermap/" title="WunderMap">WunderMap</a></li>
+  <li><a href="/maps/" title="Current Conditions Maps">Current Conditions Maps</a></li>
+  <li><a href="/ndfdimage/viewimage/" title="Forecast Maps">Forecast Maps</a></li>
+  <li><a href="/maps/catalog/" title="All Maps Catalog">Maps Catalog</a></li>
+  </ul>
+  </li>
+  <li class="gotMore">
+  <a href="javascript:void(0);" class="severe">Severe Weather</a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">Severe Weather</a></li>
+  <li><a href="/severe.asp" title="U.S. Severe Weather Map">U.S. Severe Weather Map</a></li>
+  <li><a href="/severe/europe.asp" title="Europe Severe Weather Map">Europe Severe Weather Map</a></li>
+  <li><a href="/hurricane/" title="Hurricane &amp; Tropical Cyclones">Hurricane &amp; Tropical Cyclones</a></li>
+  <li><a href="/severeconvective.asp" title="Convective Outlook">Convective Outlook</a></li>
+  <li><a href="/wundermap?fire=1" title="Wildfires">Wildfires</a></li>
+  <li><a href="/prepare/" title="Preparedness">Preparedness</a></li>
+  <li><a href="/email/emailsettings.asp" title="Weather Alerts">Weather Alerts</a></li>
+  </ul>
+  </li>
+  <li class="gotMore">
+  <a href="javascript:void(0);" class="news">News &amp; Blogs<span class="new-badge-text-only live twiw">LIVE!</span></a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">News &amp; Blogs</a></li>
+  <li><a href="/cat6" title="Category 6&trade;">Category 6&trade;</a></li>
+  <li><a href="/blog/" title="Blog Archive">Blog Archive</a></li>
+  <li><a href="/news/" title="Recent News Stories">Recent News Stories</a></li>
+  <li><a href="/weather-infographics/" title="Weather Infographics">Weather Infographics</a></li>
+  <li><a href="/weather-posters/" title="Weather Posters">Weather Posters</a></li>
+  </ul>
+  </li>
+  <li class="gotMore">
+  <a href="javascript:void(0);" class="photos">Photos &amp; Video</a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">Photos &amp; Video</a></li>
+  <li><a href="/wximage/" title="WunderPhotos">WunderPhotos</a></li>
+  <li><a href="/webcams/" title="Webcams">Webcams</a></li>
+  <li><a href="/video/" title="Videos">Videos</a></li>
+  <li><a href="/wutv/" title="WUTV">WUTV</a></li>
+  </ul>
+  </li>
+  <li><a href="/history/" class="history" title="Historical Weather">Historical Weather</a></li>
+  <li class="gotMore">
+  <a href="javascript:void(0);" class="activities">Activities</a>
+  <ul class="sideSubNav">
+  <li class="sideGoBack"><a href="javascript:void(0);">Activities</a></li>
+  <li><a href="/ski/" title="Ski &amp; Snow Reports">Ski &amp; Snow Reports</a></li>
+  <li><a href="/marine-weather/" title="Marine Weather">Marine Weather</a></li>
+  </ul>
+  </li>
+  <li>
+  <a href="/sitemap/" class="browse">Site Map</a>
+  </li>
+  </ul>
+  <ul class="sidebar-footer">
+  <li><a href="/weatherstation/buyingguide.asp">Buy a Weather Station</a></li>
+  <li><a href="/personal-weather-station/signup">Add Weather Station</a></li>
+  <li><a href="/weatherstation/overview.asp">Weather Station Network</a></li>
+  <li><a href="/download" title="Weather Underground Mobile Apps">Mobile Apps</a></li>
+  <li><a href="/weather/api/" title="Weather API for Developers">Weather API for Developers</a></li>
+  </ul>
+  </div>
+</nav>
+		<nav class="topbar">
+	<div id="global-header" class="new-wu">
+		<a href="javascript:void(0);" id="sidebarButton" class="right-off-canvas-toggle"><span class="fi-list-wrap"><i class="fi-list"></i></span></a>
+		<a href="/" id="header-logo" class="logo" title="Weather Underground (10.226.227.243)"></a>
+		<nav id="feature-menu" class="feature-menu">
+  <ul class="menu-list">
+  <li>
+  <label class="maps">Maps & Radar</label>
+  <ul class="menu-list">
+  <li><a href="/weather-radar/" title="Radar Maps">Radar Maps</a></li>
+  <li><a href="/wundermap/?radar=1">Interactive Radar</a></li>
+  <li><a href="/wundermap/?sat=1">Interactive Satellite</a></li>
+  <li><a href="/wundermap/" title="WunderMap">WunderMap</a></li>
+  <li><a href="/maps/" title="Current Conditions Maps">Current Conditions Maps</a></li>
+  <li><a href="/ndfdimage/viewimage/" title="Forecast Maps">Forecast Maps</a></li>
+  <li><a href="/maps/catalog/" title="All Maps Catalog">Maps Catalog</a></li>
+  </ul>
+  </li>
+  <li>
+  <label class="severe">Severe Weather</label>
+  <ul class="menu-list">
+  <li><a href="/severe.asp" title="U.S. Severe Weather Map">U.S. Severe Weather Map</a></li>
+  <li><a href="/severe/europe.asp" title="Europe Severe Weather Map">Europe Severe Weather Map</a></li>
+  <li><a href="/hurricane/" title="Hurricane &amp; Tropical Cyclones">Hurricane &amp; Tropical Cyclones</a></li>
+  <li><a href="/severeconvective.asp" title="Convective Outlook">Convective Outlook</a></li>
+  <li><a href="/wundermap?fire=1" title="Wildfires">Wildfires</a></li>
+  <li><a href="/prepare/" title="Preparedness">Preparedness</a></li>
+  <li><a href="/weather-alerts/" title="Weather Alerts">Email Alerts</a></li>
+  </ul>
+  </li>
+  <li>
+  <label class="news">News &amp; Blogs<span class="new-badge-text-only live twiw">LIVE!</span></label>
+  <ul class="menu-list">
+  <li><a href="/cat6" title="Category 6&trade;">Category 6&trade;</a></li>
+  <li><a href="/blog/" title="Blog Archive">Blog Archive</a></li>
+  <li><a href="/news/" title="Recent News Stories">Recent News Stories</a></li>
+  <li><a href="/weather-infographics/" title="Weather Infographics">Weather Infographics</a></li>
+  <li><a href="/weather-posters/" title="Weather Posters">Weather Posters</a></li>
+  </ul>
+  </li>
+  <li>
+  <label class="photos">Photos &amp; Video</label>
+  <ul class="menu-list">
+  <li><a href="/wximage/">WunderPhotos</a></li>
+  <li><a href="/webcams/">Webcams</a></li>
+  <li><a href="/video/">Videos</a></li>
+  <li><a href="/wutv/">WUTV</a></li>
+  </ul>
+  </li>
+  <li>
+  <label class="activities">Activities</label>
+  <ul class="menu-list">
+  <li><a href="/ski/">Ski &amp; Snow Reports</a></li>
+  <li><a href="/marine-weather/">Marine Weather</a></li>
+  </ul>
+  </li>
+  <li><a href="/weatherstation/buyingguide.asp">Buy a Weather Station</a></li>
+  <li><a href="/personal-weather-station/signup">Add Weather Station</a></li>
+  <li><a href="/weatherstation/overview.asp">Weather Station Network</a></li>
+  <li><a href="/history/">Historical Weather</a></li>
+  <li><a href="/download">Mobile Apps</a></li>
+  <li><a href="/forecast-flyer">Daily Forecast Flyer</a></li>
+  <li><a href="/weather/api/">Weather API for Developers</a></li>
+  <li><a href="/sitemap/">Site Map</a></li>
+  </ul>
+</nav>
+		<div id="wuForm-contain" class="wu-form-contain">
+		<form action="/cgi-bin/findweather/getForecast" name="wxsearch" id="wuForm" class="wu-form ui-front">
+		<div id="wuSearch-contain" class="wu-search-contain">
+		<input type="search" name="query" value="" id="wuSearch" class="wu-search" placeholder="Search Locations" data-autoinitialize="true" />
+		<span class="close-search">
+		<i class="fi-x-circle"></i>
+		</span>
+		<span class="geolocate-wrap">
+		<i class="fi-target-two"></i>
+		</span>
+		</div>
+		</form>
+		</div>
+		<div class="hide-for-small">
+		<p class="wu-account" id="wuAccount"><a id="wu-member" href="/login.asp">Log in</a> | <a id="wu-member" href="/member/registration">Join</a></p>
+		</a>
+		<a href="#" data-dropdown="wuSettings-quick" id="wuSettings" class="wu-settings">
+		<i class="fi-widget"></i>
+		</a>
+		</div>
+		<div id="wuSettings-quick" data-dropdown-content class="wu-settings-quick f-dropdown content" >
+		<ul class="button-group toggle radius">
+  <li><a onclick="wui.SetUnitToEnglish()" title="Switch to English" class="button selected">&deg;F</a></li>
+  <li><a onclick="wui.SetUnitToMetric()" title="Switch to Metric" class="button ">&deg;C</a></li>
+</ul>
+		<a href="/member/membersettings.html?page=prefs" id="wuSettings-more" class="wu-settings-more">More Settings</a>
+		</div>
+	</div>
+</nav>
+<script type="text/template" id="autocomplete_item_template">
+	<% var defcon = (item.condition && item.condition.defcon) || 0; %>
+	<% if (item.task=='geolocate') { %>
+		<li class="geolocate-button"><div class="mimic-a"><span class="location-icon"><i class="fi-target-two"></i></span><%= item.name %></div></li>
+	<% } else if (item.task=='headerGeolocate') { %>
+		<li class="ui-autocomplete-geolocate"><div class="mimic-a menu-geolocate"><i class="fi-target-two"></i><%= item.name %></div></li>
+	<% } else { %>
+		<li class="needsclick needsfocus <% if (isCity) { %>is-city<% } %><% if (isFav) { %> is-fav<% } %><% if (hasConds && item.condition.severe) { %> is-severe defcon-<%= defcon %><% } %><% if (hasConds) { %> has-conds<% } %>">
+		<a class="needsclick needsfocus">
+		<% if (item.label) { %><span class="needsclick needsfocus city-name"><%= item.label %> <i class="needsclick needsfocus fi-<% if (defcon > 4) { %>info<% } else { %>alert<% } %>"></i></span><% } %>
+		<% if (hasConds) { %>
+		<span class="needsclick needsfocus city-conds">
+		<%= item.condition.temperature %> &deg;F <%= item.condition.condition %>
+		</span>
+		<span class="needsclick needsfocus cond-icon-touch cond-set-<%= item.condition.iconPref %> cond-<%= item.condition.icon %>"></span>
+		<% } %>
+		<% if (isCity) { %><span class="needsclick needsfocus city-star" title="<% if (isFav) { %>Remove From<% } else { %>Add To<% } %> Favorite Cities"></span><% } %>
+		</a>
+		</li>
+	<% } %>
+</script>
+		<div id="inner-wrap">
+		<div id="header-alert-bar" class="loading-bar"></div>
+		<div class="favs-wrapper">
+	<div id="favorites" class="favorites ">
+		<div class="favorites-bar"></div>
+		<input type="button" class="favorites-list-toggle" value="&#x25BC;" data-dropdown="favorites-list" />
+		<div class="favorites-list f-dropdown" data-dropdown-content id="favorites-list"></div>
+	</div>
+</div>
+<script type="text/template" id="favorites-city-template">
+	<%
+		var options = options || {};
+		var isCity = true;
+		var isFav = wui.favorites.is(city.zmw);
+		var isHome = ''==city.zmw?true:false;
+		//hasConds: (options.showConditions && !!(item.condition))
+		var hasConds = !!(city.condition);
+		var defcon = hasConds && city.condition.defcon ? city.condition.defcon : 5;
+	%>
+	<% if (city.zmw) { %>
+		<li class="<% if (isCity) { %>is-city<% } %><% if (isFav) { %> is-fav<% } %><% if (hasConds && city.condition.severe) { %> is-severe defcon-<%= defcon %><% } %><% if (hasConds) { %> has-conds<% } %>" <% if (isCity) { %>data-zmw="<%= city.zmw %>" data-cityName="<%= city.name %>" <% } %>>
+		<% if (options.label) { %><label><%= options.label %></label><% } %>
+		<a href="<%= city.url %><% if (city.zip != 00000) { %>/<%= city.zip %><% } %>">
+		<span class="city-name"><%= city.name %> <i class="fi-<% if (defcon > 4) { %>info<% } else { %>alert<% } %>"></i></span>
+		<% if (hasConds) { %>
+		<span class="city-conds">
+		<%= city.condition.temperature %> &deg;F <%= city.condition.condition %>
+		</span>
+		<span class="cond-icon-touch cond-set-<%= city.condition.iconPref %> cond-<%= city.condition.icon %>"></span>
+		<% } %>
+		<% if (isCity) { %><span class="city-star" title="<% if (isFav) { %>Remove From<% } else { %>Add To<% } %> Favorite Cities"></span><% } %>
+		<%
+					//removing home button from list now that we have location management on the page - dxf
+					if (isCity && 0) {
+				%><span class="city-home <% if (isHome) { %> active <% }  %>" title="Set this as your Home City"</span><% } %>
+	 </a>
+		</li>
+	<% } %>
+</script>
+<script type="text/template" id="favorites-bar-template">
+	<ul class="no-bullet">
+		<li><a href="/member/membersettings.html?page=favorites" title="Manage Favorites"><i class="fi-star"></i></a></li>
+		<%
+			if(favorites.length > 0) {
+		_.each(favorites, function(city) {
+		print(templateCity({
+		city: city
+		}));
+		});
+		} else {
+		try {
+		if(favCityList) {
+		%>
+		<li><a>Loading favorites...</a></li>
+		<%
+				}} catch(e) {}
+			} %>
+		<%
+			if(favorites.length == 0) {
+			%>
+		<li class="popularCities-label">Popular <br/>Cities</li>
+		<%
+				_.each(popular, function(city, i) {
+					print(templateCity({
+						city: city,
+					}));
+				});
+			}
+			%>
+	</ul>
+</script>
+<script type="text/template" id="favorites-list-template">
+	<label>Popular Cities</label>
+	<ul class="list-recents">
+		<% _.each(popular, function(city) {
+			print(templateCity({
+				city: city
+			}));
+		}); %>
+	</ul>
+</script>
+		<section id="inner-content" class="inner-content" role="main">
+		<div class="header-ad-wrap">
+	<center class="clearfix">
+		<div id="WX_WindowShade"></div>
+	</center>
+		</div>
+<div class="mainWrapper">
+<input type="hidden" name="TWCcityname" value="">
+<input type="hidden" name="local_station" value="KMABOSTO198">
+	<script type="text/template" id="station-label-template">
+	<% var station = weather.current_observation.station; %>
+	<span class="station-type <% if (weather.current_observation.source=="PWS") { %>is-pws<% } else { %>is-airport<% } %>"></span>
+	<a href="<% if (weather.current_observation.source=="PWS") { %>/personal-weather-station/dashboard?ID=<%= station.id %>#history<% } else { %><%= weather.current_observation.history_url %><% } %>"><%= station.name %></a>
+</script>
+<div id="location">
+		<h2 class="city-nav-header is-parent">
+		Boston, MA
+		<i class="fi-star favorite-star " data-zmw="02152.11.99999"></i>
+		<dfn data-definition="Add/Remove home city location." class="no-decoration">
+		<i class="fi-home homecity-button notHomepage" onclick="wui.favorites.home.toggle('02152.11.99999', this, 'isHomepage', 'notHomepage', 'Logan International, MA');return false;"></i>
+		</dfn>
+		<i class="fi-list favorite-menu right-off-canvas-toggle none"></i>
+		</h2>
+		<div class="local-time"><i class="fi-clock"></i> <span>8:40 PM EDT on March 12, 2018</span> (GMT -0400)</div>
+	<span id="station-label">
+		<span class="station-type is-airport"></span>
+		<a href="/history/airport//2018/03/12/DailyHistory.html?req_city=Boston&req_state=MA&reqdb.zip=02152&reqdb.magic=11&reqdb.wmo=99999">
+		Logan International
+		</a>
+	</span>
+</div>
+<div class="row collapse city-nav">
+  <div class="columns">
+  <div class="subnav-contain">
+  <ul class="subnav">
+  <li><a href="/us/ma/boston/zmw:02152.11.99999" id="city-nav-forecast" >Forecast</a></li>
+  <li><a href="/history/airport/KBOS/2018/03/12/DailyHistory.html?req_city=Boston&req_state=MA&reqdb.zip=02152&reqdb.magic=11&reqdb.wmo=99999" id="city-nav-history" class="selected">History</a></li>
+  <li><a href="/history/airport/KBOS/2018/3/12/MonthlyCalendar.html?req_city=Boston&req_state=MA&reqdb.zip=02152&reqdb.magic=11&reqdb.wmo=99999#calendar" id="city-nav-calendar" >Calendar</a></li>
+  <li><a href="/us/ma/boston/zmw:02152.11.99999/precipitation" id="city-nav-precipitation" >Rain / Snow</a></li>
+  <li><a href="/us/ma/boston/zmw:02152.11.99999/health" id="city-nav-health" >Health</a></li>
+  </ul>
+  </div>
+  <div class="subnav">
+  <a href="#" data-dropdown="subnav-dropdown" class="button split radius">
+  History
+  <span data-dropdown="subnav-dropdown"><i class="fi-list"></i></span>
+  </a>
+  <ul id="subnav-dropdown" class="f-dropdown" data-dropdown-content>
+  <li><a href="/us/ma/boston/zmw:02152.11.99999" id="city-nav-forecast" >Forecast</a></li>
+  <li><a href="/history/airport/KBOS/2018/03/12/DailyHistory.html?req_city=Boston&req_state=MA&reqdb.zip=02152&reqdb.magic=11&reqdb.wmo=99999" id="city-nav-history" class="selected">History</a></li>
+  <li><a href="/history/airport/KBOS/2018/3/12/MonthlyCalendar.html?req_city=Boston&req_state=MA&reqdb.zip=02152&reqdb.magic=11&reqdb.wmo=99999#calendar" id="city-nav-calendar" >Calendar</a></li>
+  <li><a href="/us/ma/boston/zmw:02152.11.99999/precipitation" id="city-nav-precipitation" >Rain / Snow</a></li>
+  <li><a href="/us/ma/boston/zmw:02152.11.99999/health" id="city-nav-health" >Health</a></li>
+  </ul>
+  </div>
+  </div>
+</div>
+	<div id="profile_overlay" class="reveal-modal" data-reveal></div>
+	<div class="row collapse">
+		<div class="column small-12">
+		<h1 class="has-parent history-header">Weather History for KBOS<span> - December, 2015</span></h1 class="has-parent">
+		</div>
+	</div>
+<div class="row collapse">
+	<div class="column large-8 right-spacing">
+		<div class="daily-history-select">
+	<div class="change-date">Change the Weather History Date:</div>
+	<div class="history-date-select">
+	<form action="/cgi-bin/findweather/getForecast?&reqdb.zip=&reqdb.magic=&reqdb.wmo=">
+		<input type=hidden value=KBOS name=code /> <input type=hidden value=airport name=airportorwmo /> <input type=hidden value=DailyHistory name=historytype />
+		<input type="hidden" value="" name="search_city">
+		<input type="hidden" value="" name="search_state">
+		<input type="hidden" value="" name="search_statename">
+		<input type="hidden" value="" name="search_zip">
+		<input type="hidden" value="" name="search_magic">
+		<input type="hidden" value="" name="search_wmo">
+		<div class="date-selector">
+		<select class="month form-select" name="month">
+		<option  value="1">January</option>
+		<option  value="2">February</option>
+		<option  value="3">March</option>
+		<option  value="4">April</option>
+		<option  value="5">May</option>
+		<option  value="6">June</option>
+		<option  value="7">July</option>
+		<option  value="8">August</option>
+		<option  value="9">September</option>
+		<option  value="10">October</option>
+		<option  value="11">November</option>
+		<option selected="selected" value="12">December</option>
+		</select>
+		<select class="day form-select" name="day">
+		<option >1</option>
+		<option >2</option>
+		<option >3</option>
+		<option >4</option>
+		<option >5</option>
+		<option >6</option>
+		<option >7</option>
+		<option >8</option>
+		<option >9</option>
+		<option >10</option>
+		<option >11</option>
+		<option >12</option>
+		<option >13</option>
+		<option >14</option>
+		<option >15</option>
+		<option >16</option>
+		<option >17</option>
+		<option >18</option>
+		<option >19</option>
+		<option >20</option>
+		<option >21</option>
+		<option >22</option>
+		<option >23</option>
+		<option >24</option>
+		<option >25</option>
+		<option selected="selected">26</option>
+		<option >27</option>
+		<option >28</option>
+		<option >29</option>
+		<option >30</option>
+		<option >31</option>
+		</select>
+		<select class="year form-select" name="year">
+		<option >2018</option>
+		<option >2017</option>
+		<option >2016</option>
+		<option selected="selected">2015</option>
+		<option >2014</option>
+		<option >2013</option>
+		<option >2012</option>
+		<option >2011</option>
+		<option >2010</option>
+		<option >2009</option>
+		<option >2008</option>
+		<option >2007</option>
+		<option >2006</option>
+		<option >2005</option>
+		<option >2004</option>
+		<option >2003</option>
+		<option >2002</option>
+		<option >2001</option>
+		<option >2000</option>
+		<option >1999</option>
+		<option >1998</option>
+		<option >1997</option>
+		<option >1996</option>
+		<option >1995</option>
+		<option >1994</option>
+		<option >1993</option>
+		<option >1992</option>
+		<option >1991</option>
+		<option >1990</option>
+		<option >1989</option>
+		<option >1988</option>
+		<option >1987</option>
+		<option >1986</option>
+		<option >1985</option>
+		<option >1984</option>
+		<option >1983</option>
+		<option >1982</option>
+		<option >1981</option>
+		<option >1980</option>
+		<option >1979</option>
+		<option >1978</option>
+		<option >1977</option>
+		<option >1976</option>
+		<option >1975</option>
+		<option >1974</option>
+		<option >1973</option>
+		<option >1972</option>
+		<option >1971</option>
+		<option >1970</option>
+		<option >1969</option>
+		<option >1968</option>
+		<option >1967</option>
+		<option >1966</option>
+		<option >1965</option>
+		<option >1964</option>
+		<option >1963</option>
+		<option >1962</option>
+		<option >1961</option>
+		<option >1960</option>
+		<option >1959</option>
+		<option >1958</option>
+		<option >1957</option>
+		<option >1956</option>
+		<option >1955</option>
+		<option >1954</option>
+		<option >1953</option>
+		<option >1952</option>
+		<option >1951</option>
+		<option >1950</option>
+		<option >1949</option>
+		<option >1948</option>
+		<option >1947</option>
+		<option >1946</option>
+		<option >1945</option>
+		<option >1944</option>
+		<option >1943</option>
+		<option >1942</option>
+		<option >1941</option>
+		<option >1940</option>
+		<option >1939</option>
+		<option >1938</option>
+		<option >1937</option>
+		<option >1936</option>
+		<option >1935</option>
+		<option >1934</option>
+		<option >1933</option>
+		<option >1932</option>
+		<option >1931</option>
+		<option >1930</option>
+		<option >1929</option>
+		<option >1928</option>
+		<option >1927</option>
+		<option >1926</option>
+		<option >1925</option>
+		<option >1924</option>
+		<option >1923</option>
+		<option >1922</option>
+		<option >1921</option>
+		<option >1920</option>
+		</select>
+		</div>
+		<div class="date-selector-view-button"><input type="submit" value="View" class="button radius" /></div>
+	</form>
+</div>
+		<h2 class="history-date">Saturday, December 26, 2015</h2>
+	<div class="previous-link"><a href="/history/airport/KBOS/2015/12/25/DailyHistory.html">&laquo; Previous Day</a></div>
+	<div class="next-link"><a href="/history/airport/KBOS/2015/12/27/DailyHistory.html">Next Day &raquo;</a></div>
+	<div id="#history-select-tabs">
+		<dl class="wui-tabs tabs">
+		<dd class="active">
+		<a href="" class="contentTabActive brTop5">Daily</a>
+		</dd>
+		<dd class>
+		<a href="/history/airport/KBOS/2015/12/26/WeeklyHistory.html?&reqdb.zip=&reqdb.magic=&reqdb.wmo=" class="contentTab brTop5">Weekly</a>
+		</dd>
+		<dd class>
+		<a href="/history/airport/KBOS/2015/12/26/MonthlyHistory.html?&reqdb.zip=&reqdb.magic=&reqdb.wmo=" class="contentTab brTop5">Monthly</a>
+		</dd>
+		<dd class>
+		<a href="/history/airport/KBOS/2015/12/26/CustomHistory.html?&reqdb.zip=&reqdb.magic=&reqdb.wmo=" class="contentTab brTop5">Custom</a>
+		</dd>
+		</dd>
+		</div>
+<script type="text/javascript">
+	function buildLinks(){
+	var params = "";
+	var TWCname = $("input[name='TWCcityname']").val();
+	if(TWCname){params="locid="+TWCname;}
+	else{
+		params+="req_city="+$('input[name=search_city]').val();
+		params+="&req_state="+$('input[name=search_state]').val();
+		params+="&req_statename="+$('input[name=search_statename]').val();
+  }
+  params += "&reqdb.zip=" + $('input[name=search_zip]').val();
+  params += "&reqdb.magic=" + $('input[name=search_magic]').val();
+  params += "&reqdb.wmo=" + $('input[name=search_wmo]').val();
+  var prevVal = $('.previous-link a').attr('href');
+  var nextVal = $('.next-link a').attr('href');
+  $('.previous-link a').attr('href', prevVal+"?"+params);
+  $('.next-link a').attr('href', nextVal+"?"+params);
+  }
+	function buildPWSUrl() {
+  var new_date = new Date();
+  new_date = new_date - 24 * 60 * 60 * 1000;
+  var yesterday = new Date(new_date);
+  var yesterday_date = wui.date.strftime("%Y%m%d", yesterday);
+  new_date = new_date - 24 * 60 * 60 * 30 * 1000;
+  var month_ago = new Date(new_date);
+  var thirty_days_ago = wui.date.strftime("%Y%m%d", month_ago);
+  //if(wui.bootstrapped.pwsdashboard.crossLinkingVars.histType=="yesterday"){
+  yesterday_location = '/personal-weather-station/dashboard?ID=' + $('input[name=local_station]').val() + '&scrollTo=historyTable#history/s' + thirty_days_ago + '/e' + yesterday_date + '/mmonth';
+  $('a#pws_station').attr('href', yesterday_location);
+}
+buildLinks();
+buildPWSUrl();
+</script>
+</div>
+		<table cellspacing="0" cellpadding="0" id="historyTable" class="responsive airport-history-summary-table">
+		<thead>
+		<tr>
+		<th>&nbsp;</th>
+		<th>Actual</th>
+		<th>Average </th>
+		<th>Record </th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td class="history-table-grey-header">Temperature</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Mean Temperature</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">48</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">32</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Max Temperature</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">55</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">38</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">61</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+(1982)</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Min Temperature</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">25</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">-4</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+(1980)</td>
+		</tr>
+		<tr>
+		<td class="history-table-grey-header">Degree Days</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Heating Degree Days</span></td>
+		<td>17</td>
+		<td>33</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Month to date heating degree days</span></td>
+		<td>459</td>
+		<td>766</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Since 1 July heating degree days</span></td>
+		<td>1314</td>
+		<td>1821</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Cooling Degree Days</span></td>
+		<td>0</td>
+		<td>0</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Month to date cooling degree days</span></td>
+		<td>0</td>
+		<td>0</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Year to date cooling degree days</span></td>
+		<td>921</td>
+		<td>747</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="history-table-grey-header">Moisture</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Dew Point</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">33</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Average Humidity</span></td>
+		<td>60</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Maximum Humidity</span></td>
+		<td>76</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Minimum Humidity</span></td>
+		<td>43</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="history-table-grey-header">Precipitation</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Precipitation</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">0.00</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">0.11</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">3.51</span><span class="wx-unit">&nbsp;in</span></span>
+(1969)</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Month to date precipitation</span></td>
+		<td>2.89</td>
+		<td>3.24</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Year to date precipitation</span></td>
+		<td>33.41</td>
+		<td>43.23</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="history-table-grey-header">Sea Level Pressure</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Sea Level Pressure</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">30.46</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="history-table-grey-header">Wind</td>
+		<td colspan="3" class="history-table-grey-header">&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Wind Speed</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">7</span><span class="wx-unit">&nbsp;mph</span></span>
+ (ENE)</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Max Wind Speed</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">16</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Max Gust Speed</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">22</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Visibility</span></td>
+		<td>
+  <span class="wx-data"><span class="wx-value">10</span><span class="wx-unit">&nbsp;miles</span></span>
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Events</span></td>
+		<td>
+	&nbsp;
+</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		</tbody>
+		</table>
+		<table cellspacing="0" cellpadding="3" class="full" style="border-bottom: 1px solid #CCC;">
+		<tr class="valueKey">
+		<td colspan="2" class="taL sm"><span class="b">T</span> = Trace of Precipitation, <span class="b">MM</span> = Missing Value</td>
+		<td colspan="2" class="taR sm"><span class="b">Source:</span> NWS Daily Summary</td>
+		</tr>
+		</table>
+	<center class="clearfix">
+		<div id="div-gpt-ad-615639597871654305-4" class="ad-box no-well"></div>
+	</center>
+		<h2>Daily Weather History Graph</h2>
+		<div id="history-graph-image"><img src="/cgi-bin/histGraphAll?day=26&year=2015&month=12&ID=KBOS&type=3&width=614" alt="Daily Weather History Graph" /></div>
+		<div class="certify-report-link"><a href="http://help.wunderground.com/knowledgebase/topics/17761-history-almanac" target="new">Certify This Report</a></div>
+	</div>
+	<div class="column small-12 large-4">
+	<center class="clearfix">
+		<div id="div-gpt-ad-615639597871654305-2" class="ad-box compact-large align-top"></div>
+	</center>
+  <!--<div class="wx-module simple">
+	<h3>Search for Another Location</h3>
+	<form action="/cgi-bin/findweather/getForecast" onsubmit="return validateAPT(this.code.value)" id="placePick">
+		<input type="hidden" value="airport" name="airportorwmo" />
+		<input type="hidden" value="DailyHistory" name="historytype" />
+		<input type="hidden" value="2015" name="year" />
+		<input type="hidden" value="12" name="month" />
+		<input type="hidden" value="26" name="day" />
+		<input type="hidden" value="/history/index.html" name="backurl" />
+		<div class="input-title airport">Airport:</div>
+		<div class="icao-input-field"><input type="text" value="KBOS" name="code" maxlength="300" id="history-icao-search" /></div>
+		<div class="sidebar-location-search-button"><input class="button radius" type="submit" value="Submit" /></div>
+	</form>
+	<script language="javascript" type="text/javascript">
+		jQuery(document).ready(function(){
+		var a = new wui.autocomplete({
+		input:"#history-icao-search",
+		autosubmit: false,
+		isMainSearchBox: false
+		});
+		});
+		</script>
+</div>-->
+<div class="wx-module simple">
+	<h3>Search for Another Location</h3>
+	<form action="/cgi-bin/findweather/getForecast" onsubmit="return validateAPT(this.code.value)" id="placePick">
+		<input type="hidden" value="query" name="airportorwmo" />
+		<input type="hidden" value="DailyHistory" name="historytype" />
+		<input type="hidden" value="/history/index.html" name="backurl" />
+		<div class="input-title">Airport or City:</div>
+		<div class="icao-input-field"><input type="text" value="KBOS" name="code" maxlength="300" id="history-icao-search" /></div>
+		<input type="submit" value="Submit" class="button radius" />
+		</form>
+		<script language="javascript" type="text/javascript">
+		jQuery(document).ready(function(){
+		var a = new wui.autocomplete({
+		input:"#history-icao-search",
+		autosubmit: false,
+		isMainSearchBox: false
+		});
+		});
+		</script>
+	</div>
+  <div class="wx-module simple">
+	<h3>Trip Planner</h3>
+		<p class="trip-planner-instructions">Search our weather history database for the weather conditions in past years. The results will help you decide how hot, cold, wet, or windy it might be!</p>
+		<form action="/cgi-bin/findweather/getForecast" method="get">
+		<input type="hidden" value="PlannerHistory" name="historytype" />
+		<input type="hidden" value="KBOS" name="code" />
+		<input type="hidden" value="query" name="airportorwmo" />
+		<input type="hidden" value="1972" name="year" />
+		<input type="hidden" value="1972" name="yearend" />
+		<div class="input-title">Date:</div>
+		<div class="history-date-select trip-planner">
+		<div class="planner-date-select">
+  <select class="month" name="month">
+  <option  value="1">January</option>
+  <option  value="2">February</option>
+  <option  value="3">March</option>
+  <option  value="4">April</option>
+  <option  value="5">May</option>
+  <option  value="6">June</option>
+  <option  value="7">July</option>
+  <option  value="8">August</option>
+  <option  value="9">September</option>
+  <option  value="10">October</option>
+  <option  value="11">November</option>
+  <option selected="selected" value="12">December</option>
+  </select>
+  <select class="day" name="day">
+  <option >1</option>
+  <option >2</option>
+  <option >3</option>
+  <option >4</option>
+  <option >5</option>
+  <option >6</option>
+  <option >7</option>
+  <option >8</option>
+  <option >9</option>
+  <option >10</option>
+  <option >11</option>
+  <option >12</option>
+  <option >13</option>
+  <option >14</option>
+  <option >15</option>
+  <option >16</option>
+  <option >17</option>
+  <option >18</option>
+  <option >19</option>
+  <option >20</option>
+  <option >21</option>
+  <option >22</option>
+  <option >23</option>
+  <option >24</option>
+  <option >25</option>
+  <option selected>26</option>
+  <option >27</option>
+  <option >28</option>
+  <option >29</option>
+  <option >30</option>
+  <option >31</option>
+  </select>
+</div>
+		<input type="submit" value="Submit" class="button radius planner-date-button" />
+		</div>
+		</form>
+</div>
+  <!--
+        
+	<div class="wx-module simple">
+		<h3>Radar Archive</h3>
+		<div class="radar-history-thumbnail-link"><a href="//radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_composite_archive?centerlat=42.36416626&centerlon=-71.00499725&radius=124&newmaps=1&type=N0R&type2=TR0&num=1&SD.epoch=1451106000&ED.epoch=1451192400&DELAY=60&delay=20&width=640&height=480" rel="lightbox" title="Boston Radar Loop for Saturday, December 26, 2015"><img src="//icons.wxug.com/graphics/wu2/radar_50x50.gif" width="50" height="50" alt="Click to View Archived Radar Loop" /></a></div>
+		<div class="radar-history-link"><a href="//radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_composite_archive?centerlat=42.36416626&centerlon=-71.00499725&radius=124&newmaps=1&type=N0R&type2=TR0&num=1&SD.epoch=1451106000&ED.epoch=1451192400&DELAY=60&delay=20&width=640&height=480" rel="lightbox" title="Boston Radar Loop for Saturday, December 26, 2015" class="b">View Animated Radar Loop</a></div>
+		<p class="radar-history-qualifier">This image may take a moment to generate.</p>
+	</div>
+  -->
+	<center class="clearfix">
+		<div id="div-gpt-ad-615639597871654305-3" class="ad-box compact-large"></div>
+	</center>
+	<div class="wx-module simple" id="astronomy-mod">
+		<h3>Astronomy</h3>
+		<table>
+		<thead>
+		<tr>
+		<th>Dec. 26, 2015</th>
+		<th>Rise</th>
+		<th>Set</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Actual Time</td>
+		<td>7:11 AM EST</td>
+		<td>4:17 PM EST</td>
+		</tr>
+		<tr>
+		<td><dfn>Civil Twilight</dfn></td>
+		<td>6:39 AM EST</td>
+		<td>4:49 PM EST</td>
+		</tr>
+		<tr>
+		<td><dfn>Nautical Twilight</dfn></td>
+		<td>6:04 AM EST</td>
+		<td>5:24 PM EST</td>
+		</tr>
+		<tr>
+		<td><dfn>Astronomical Twilight</dfn></td>
+		<td>5:30 AM EST</td>
+		<td>5:58 PM EST</td>
+		</tr>
+		</tbody>
+		<tbody class="highlight">
+		<tr>
+		<td>Moon</td>
+		<td>5:57 PM EST (12/26)</td>
+		<td>7:47 AM EST (12/26)</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><dfn>Length of Visible Light</dfn></td>
+		<td colspan="2">
+		10h 09m
+		</td>
+		</tr>
+		<tr>
+		<td><dfn>Length of Day</dfn></td>
+		<td colspan="2">
+		<div>9h 05m</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		<table>
+		<tbody class="highlight">
+		<tr>
+		<td id="phaseSummary" colspan="5"><span class="wx-value">Full, 98</span>% of the Moon is Illuminated</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr class="phaseIcon">
+		<td>
+		<span>Dec 26</span>
+		<div class="north moon16"></div>
+		Full
+		</td>
+		<td>
+		<span>Jan 2</span>
+		<div class="north moon23"></div>
+		Last Quarter
+		</td>
+		<td>
+		<span>Jan 9</span>
+		<div class="north moon1"></div>
+		New
+		</td>
+		<td>
+		<span>Jan 16</span>
+		<div class="north moon8"></div>
+		First Quarter
+		</td>
+		<td>
+		<span>Jan 23</span>
+		<div class="north moon16"></div>
+		Full
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		<div class="footer">
+		<a href="/sky/ShowSky.asp?TheLat=42.36416626&TheLon=-71.00499725&TimeZoneName=America/New_York">Visit Astronomy</a>
+		</div>
+	</div>
+	</div>
+	<div class="column large-12">
+	<center class="clearfix">
+		<div id="div-gpt-ad-615639597871654305-5" class="ad-box no-well"></div>
+	</center>
+		<h2>
+		Hourly Weather History &amp; Observations
+		</h2>
+		<div id="observations_details" class="high-res" >
+		<table cellspacing="0" cellpadding="0" id="obsTable" class="obs-table responsive">
+		<thead>
+		<tr>
+		<th>Time <span class="nb">(EST)</span></th>
+		<th>Temp.</th>
+		<th>Windchill</th>
+		<th>Dew Point</th>
+		<th>Humidity</th>
+		<th>Pressure</th>
+		<th>Visibility</th>
+		<th>Wind Dir</th>
+		<th>Wind Speed</th>
+		<th>Gust Speed</th>
+		<th>Precip</th>
+		<th>Events</th>
+		<th>Conditions</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="no-metars">
+		<td >12:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">54.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">33.1</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >45%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.29</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >NNW</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.4</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >1:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">52.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >43%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.34</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">15.0</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >2:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">50.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >48%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.38</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >NNW</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">12.7</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">21.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >3:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">48.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">32.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >54%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.41</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >NNW</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">8.1</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >4:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.4</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >56%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.43</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">9.2</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Scattered Clouds</td>
+		</tr>
+		<tr class="no-metars">
+		<td >5:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">39.7</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">32.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >60%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.45</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.4</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Scattered Clouds</td>
+		</tr>
+		<tr class="no-metars">
+		<td >6:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">42.1</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">40.2</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >65%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.48</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">3.5</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >7:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">43.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.3</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">32.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >65%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.50</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">3.5</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >8:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">43.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">32.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >58%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.53</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">4.6</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >9:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">42.5</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >56%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.56</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >North</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >10:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">48.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >52%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.54</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >NE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">5.8</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Scattered Clouds</td>
+		</tr>
+		<tr class="no-metars">
+		<td >11:54 AM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >54%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.52</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >East</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">5.8</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Scattered Clouds</td>
+		</tr>
+		<tr class="no-metars">
+		<td >12:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >52%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.51</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >East</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">4.6</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >1:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">33.1</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >59%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.48</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">8.1</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >2:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">46.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">42.5</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">35.1</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >66%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.49</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >3:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.2</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">34.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >65%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.50</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Mostly Cloudy</td>
+		</tr>
+		<tr class="no-metars">
+		<td >4:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.2</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">35.1</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >68%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.50</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >5:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.2</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">36.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >71%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.49</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >SE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >6:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.8</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">36.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >71%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.50</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >SSE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">5.8</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >7:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.2</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">36.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >71%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.47</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >SE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">6.9</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >8:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">41.8</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">36.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >71%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.45</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >SE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">5.8</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >9:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">42.6</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">37.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >74%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.42</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">4.6</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >10:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  -
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">37.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >74%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.40</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >Calm</td>
+		<td >Calm</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		<tr class="no-metars">
+		<td >11:54 PM</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">45.0</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td>
+  <span class="wx-data"><span class="wx-value">43.5</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">37.9</span><span class="wx-unit">&nbsp;&deg;F</span></span>
+</td>
+		<td >76%</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">30.34</span><span class="wx-unit">&nbsp;in</span></span>
+</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">10.0</span><span class="wx-unit">&nbsp;mi</span></span>
+</td>
+		<td >ESE</td>
+		<td >
+  <span class="wx-data"><span class="wx-value">3.5</span><span class="wx-unit">&nbsp;mph</span></span>
+</td>
+		<td >
+  -
+</td>
+		<td >N/A</td>
+		<td >
+	&nbsp;
+</td>
+		<td >Overcast</td>
+		</tr>
+		</tbody>
+		</table>
+		<div class="obs-table-footer">
+		<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?setpref=SHOWMETAR&value=1" rel="nofollow">Show full METARS</a> |
+		<a href="/metarFAQ.asp">METAR FAQ</a></span>
+		</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function validateAPT(field) {
+	var valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+	var hyphencount = 0;
+	if (field.length<3) {
+	alert("Airport codes must be 3 or 4 characters long.");
+	return false;
+	}
+		return true;
+	}
+</script>
+	<center class="clearfix">
+		<div id="div-gpt-ad-615639597871654305-bot" class="ad-box compact-leader no-mobile"></div>
+	</center>
+		</section>
+		<footer class="primary">
+	<div class="row">
+		<div class="small-12 large-6 large-centered columns">
+		<div class="row">
+		<div class="small-12 medium-4 columns">
+		<ul class="no-bullet">
+		<li><a href="/about/our-company" title="About Weather Underground">About</a></li>
+		<li><a href="/about/contact-us" title="Contact Weather Underground">Contact</a></li>
+		<li><a href="http://careers.weather.com/search/?q=&locationsearch=san+francsico?utm_source=careersite&utm_campaign=wunderground" target="_blank" title="Weather Underground Employment Opportunities">Jobs</a></li>
+		<li><a href="http://www.theweathercompany.com/newsroom" target="_blank" title="Weather Underground In The News">News</a></li>
+		</ul>
+		</div>
+		<div class="small-12 medium-4 columns">
+		<ul class="no-bullet">
+		<li><a href="/download" title="Weather Underground Mobile Apps">Our Apps</a></li>
+		<li><a href="/weather/api" title="The Weather API">Weather API</a></li>
+		<li><a href="/fullscreenweather" title="Experience Full Screen Weather">Full Screen Weather</a></li>
+		<li><a href="/weatherstation/" title="Personal Weather Station Network">Personal Weather Stations</a></li>
+		</ul>
+		</div>
+		<div class="small-12 medium-4 columns">
+		<ul class="no-bullet">
+		<li><a href="/sitemap/" title="Weather Underground Site Map">Site Map</a></li>
+		<li><a href="http://help.wunderground.com/" target="_blank" title="Customer Feedback for Weather Underground">Feedback</a></li>
+		<li><a href="/legal" title="Privacy Statement">Privacy</a></li>
+		<li><a href="/ad-choices" class="ad-choices">AdChoices</a></li>
+		</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns copyright-wrap">
+		<p class="copyright">
+		&copy; Copyright TWC Product and Technology LLC 2014, 2018
+		</p>
+		</div>
+	</div>
+</footer>
+<a class="exit-off-canvas"></a>
+		</div>
+		</div>
+<script>
+	wui.bootstrapped = {
+		iconPath: "i/c/v4",
+		"localtime": {
+  "epoch": 1520901648,
+  "pretty": "8:40 PM EDT on March 12, 2018",
+  "rfc822": "Mon, 12 Mar 2018 20:40:48 -0400",
+  "iso8601": "2018-03-12T20:40:48-0400",
+  "year": 2018,
+  "month": 3,
+  "day": 12,
+  "yday": 70,
+  "hour": 20,
+  "min": "40",
+  "sec": 48,
+  "monthname": "March",
+  "monthname_short": "Mar",
+  "weekday": "Monday",
+  "weekday_short": "Mon",
+  "ampm": "PM",
+  "tz_short": "EDT",
+  "tz_long": "America/New_York",
+  "tz_offset_text": "-0400",
+  "tz_offset_hours": -4.00
+},
+		"usertime": {
+  "epoch": 1520901647,
+  "pretty": "12:40 AM GMT on March 13, 2018",
+  "rfc822": "Tue, 13 Mar 2018 00:40:47 +0000",
+  "iso8601": "2018-03-13T00:40:47+0000",
+  "year": 2018,
+  "month": 3,
+  "day": 13,
+  "yday": 71,
+  "hour": 0,
+  "min": "40",
+  "sec": 47,
+  "monthname": "March",
+  "monthname_short": "Mar",
+  "weekday": "Tuesday",
+  "weekday_short": "Tue",
+  "ampm": "AM",
+  "tz_short": "GMT",
+  "tz_long": "UTC",
+  "tz_offset_text": "+0000",
+  "tz_offset_hours": 0.00
+},
+		targetTag: "historypagepws-20",
+		targetId: "KFZUWBRY24J77OPA",
+		search: "", //Used for Wundermap autocomplete initialization
+		async: false,
+		https: false,
+		smurfs: false,
+		showUstreamTDU: false,
+		showDailyDownpourTDU: false,
+		showSurveyBanner: false,
+		showVoteHook: false,
+		daysToElection: "-4",
+	 showPrivacyBanner: false,
+		dailyDownpourText: '',
+		showBOM: false,
+		//These scripts are interacted with via scriptUsher.js, located in wui-js
+		scripts: {
+		'amp.premier': {
+		url: '/amp.premier/amp.premier.min.js',
+		done: function() {
+		akamai.amp.AMP.loadDefaults('/amp.premier/amp.premier.xml');
+		}
+		},
+		googlemaps: {
+		url: "//maps.googleapis.com/maps/api/js?sensor=false&client=gme-theweatherchannel&channel=CityPage&libraries=geometry&" +
+		"callback=wui.bootstrapped.scripts.googlemaps.callback",
+		promise: null,
+		callback: function() {
+		wui.bootstrapped.scripts.googlemaps.promise.resolve();
+		}
+		},
+		mapbox: {
+		url: "//api.mapbox.com/mapbox.js/v2.2.2/mapbox.js?",
+		promise: null
+		},
+		mosaicmap: {
+		//url: "//icons.wxug.com/wxmapsdk/1.1.2/wx.js?apiKey=abcdefghijklmnopqrstuvwxyz0123456789&",
+		url: "//icons.wxug.com/scripts/wxmapsdk/1.5.0/wx.js",
+		promise: null
+		},
+		mosaicwundermap: {
+  url: "//icons.wxug.com/scripts/mosaicmap/1.2.2/wui.mosaicmap.min.js",
+		promise: null
+		},
+		infobox: {
+		url: "/scripts/wundermap/src/wu4/stable/gmap_util_lib/infobox_packed.js?v=3.5.20",
+		promise: null
+		},
+		'jquery-cookie': {
+		url: "//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+		promise: null
+		},
+		wundermap: {
+		// SHH TODO: Update SERVERCONFIG, then reference SERVERCONFIG.WunderMap.Version.release
+		url: "//icons.wxug.com/scripts/wundermap/release/8.1.2/wundermap.min.js?v=1.3",
+		promise: null
+		},
+		angularStationselect: {
+		url: '//icons.wxug.com/scripts/angular/1.3.1/angular.min.js',
+  promise: null,
+		done: function() {
+  var stationselect_promise = null;
+  stationselect_promise = wui.usher.loadScript('stationselect');
+		}
+		},
+		stationselect: {
+		url: "//icons.wxug.com/scripts/wui-station-select/0.0.6/wui.ngstationselect.min.js",
+		promise: null,
+  done: function() {
+  var temp = angular.bootstrap(document, ["wu_station_select"]);
+  var count = 0;
+  var timeout = setInterval(function() {
+  count++;
+  if(count>10){
+  clearInterval(timeout);
+  }
+  else if (temp) {
+  angular.element('#station-select-button-ng').triggerHandler('click');
+  clearInterval(timeout);
+  }
+  }, 1000);
+  }
+		},
+		}
+	};
+</script>
+  <script>
+wui.bootstrapped.pwsdashboard = {
+  crossLinkingVars:{
+  histType: null,
+  locid: null
+  },
+  radarCamVars:{
+  stationid: "",
+  units: "english",
+  nwo: true,
+  sda: true,
+  cam: false,
+  nim: false,
+  pws_bootstrap:
+{
+	"response": {
+		"version": null,
+		"units": "english",
+		"termsofService": "https://www.wunderground.com/weather/api/d/terms.html",
+		"attribution": {
+		"image":"//icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"features": {
+		}
+		, "results": [
+		{
+		"name": null,
+		"neighborhood":null,
+		"city": null,
+		"state": null,
+		"state_name":null,
+		"country": null,
+		"country_iso3166":"1",
+		"country_name":null,
+		"continent":"US",
+		"zip":null,
+		"magic":null,
+		"wmo":null,
+		"radarcode":null,
+		"radarregion_ic":null,
+		"radarregion_link": "//",
+		"latitude":null,
+		"longitude":null,
+		"elevation":null,
+  "wfo": "BOX",
+		"l": "/q/zmw:.."
+		}
+		,
+		{
+		"name": "Logan International",
+		"neighborhood":null,
+		"city": "Logan International",
+		"state": "MA",
+		"state_name":"Massachusetts",
+		"country": "US",
+		"country_iso3166":null,
+		"country_name":"USA",
+		"continent":"US",
+		"zip":"02152",
+		"magic":"11",
+		"wmo":"99999",
+		"radarcode":"box",
+		"radarregion_ic":"hfd",
+		"radarregion_link": "//",
+		"latitude":42.36416626,
+		"longitude":-71.00499725,
+		"elevation":null,
+  "wfo": "BOX",
+		"l": "/q/zmw:02152.11.99999"
+		}
+		]
+	}
+}
+,
+  country: "",
+  mapTypeId: "",
+  lat: "",
+  lon: "",
+  isRecent: "",
+  lastUpdateEpoch: "",
+  units: "",
+  mode: "tw",
+  scrollTo: null
+  },
+};
+</script>
+<script>
+	wui.bootstrapped.scripts.wundermap.promise = jQuery.Deferred().resolve();
+	wui.bootstrapped.scripts.googlemaps.promise = jQuery.Deferred().resolve();
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.time.min.js"></script>
+<script src="//icons.wxug.com/scripts/backbone-nested/1.1.2/backbone-nested.min.js"></script>
+<script src="//icons.wxug.com/scripts/foundation/5.2.2-patch/foundation.equalizer.min.js"></script>
+<script src="//icons.wxug.com/scripts/responsive-tables.js?v=2"></script>
+	<script src="//icons.wxug.com/scripts/pubnation.js"></script>
+	<script src="//icons.wxug.com/scripts/wui-sitewide/2.2.2/wui.sitewide.min.js"></script>
+	<script src="//icons.wxug.com/scripts/wui-backbone/1.7.5/wui.backbone.min.js"></script>
+<script>
+wui.bootstrapped.prefs = {
+	'selected_pws': "",
+	'CP_FCTTAB': null,
+	'CP_VAR_dp': null,
+	'CP_VAR_fl': null,
+	'CP_VAR_temp': null,
+	'CP_VAR_cc': null,
+	'CP_VAR_pop': null,
+	'CP_VAR_h': null,
+	'CP_VAR_p': null,
+	'CP_VAR_wspd': null,
+	'CP_VAR_qpf': null,
+	'CP_VAR_precip': null,
+	'EXPFCT': "1",
+	'RADARBOX': null,
+	'RADARBOX_WEBCAM': null,
+	'GMAPTYPE': '',
+	'GMAPUNITS': '',
+	'iconset': '',
+	'LangCode': 'EN',
+	'BrowserCode': 'en_US',
+	'Units': 'english',
+	'raw_string': '',
+  'fodqa' : false,
+	'rapidfire': '10'
+};
+</script>
+<script>
+wui.bootstrapped.ajax_favorites = true; //added for wundermap favorites layer loading
+wui.bootstrapped.citylist = "";
+//wui.bootstrapped.citylist = "";
+</script>
+<script>
+wui.bootstrapped.recents = [];
+</script>
+<script>
+wui.bootstrapped.popular=[
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "New York, NY",
+	"type": "popular",
+	"zmw": "10001.11.99999"
+		},
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "London, UK",
+	"type": "popular",
+	"zmw": "00000.40.03779"
+		},
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "Chicago, IL",
+	"type": "popular",
+	"zmw": "60290.1.99999"
+		},
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "Boston, MA",
+	"type": "popular",
+	"zmw": "02101.1.99999"
+		},
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "Houston, TX",
+	"type": "popular",
+	"zmw": "77001.1.99999"
+		},
+	{
+	url: "///",
+	"lat": null,
+	"lon": null,
+	"name": "San Francisco, CA",
+	"type": "popular",
+	"zmw": "94101.1.99999"
+		},
+	];
+if(!wui.bootstrapped.favorites) {
+	wui.bootstrapped.popularcities = ["94102.1.99999","10001.11.99999","60290.1.99999","02108.1.99999","77001.1.99999","00000.40.03779"];
+}
+</script>
+<script>
+wui.bootstrapped.ads = {
+	interval: 310000,
+	enableAdRefresh: 1,
+	ugc: false
+};
+</script>
+<script>
+	var pwidget_config = {
+  clean: true,
+  copypaste: false,
+  shareQuote: false,
+		defaults: {
+		afterShare: false,
+  afterShareText: false,
+  shareAgain: false
+		}
+  };
+</script>
+		<!-- Adobe Analytics -->
+	<script type="text/javascript" src="//icons.wxug.com/scripts/omniture-visitorapi.js?v=1.0"></script>
+	<script type="text/javascript" src="//icons.wxug.com/scripts/omniture-appmeasurement.js?v=1.0"></script>
+	<script type="text/javascript">
+		s.pageName = "LocalWX: History";
+		s.channel = "History";
+		s.prop5 = "LocalWX";
+		s.prop2 = "History > Airport";
+		// Member Type
+		s.eVar12="non-member";
+		// Ad Blocker
+		s.eVar10 = window.noAdBlocker ? "no" : "yes";
+		// Server
+		s.server = "www.wunderground.com";
+		// Events
+		s.events = "event15";
+		// Campaigns
+		s.campaign = "";
+		var s_code=s.t();if(s_code)document.write(s_code);
+	</script>
+<!-- End Adobe Analytics -->
+<!-- Google Analytics -->
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	 ga('create', 'UA-5000463-5', 'auto');
+	 ga('require', 'GTM-M7B5RR2');
+	 ga('send', 'pageview');
+	</script>
+<!-- End Google Analytics -->
+<!-- Begin comScore Tag -->
+	<script>
+	 var _comscore = _comscore || [];
+	 _comscore.push({ c1: "2", c2: "6164429" });
+	 (function() {
+	 var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	 s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	 el.parentNode.insertBefore(s, el);
+	 })();
+	</script>
+	<noscript>
+	 <img src="https://b.scorecardresearch.com/p?c1=2&c2=6164429&cv=2.0&cj=1" style="display:none;" />
+	</noscript>
+<!-- End comScore Tag -->
+<!-- Start Nielsen 6.0 -->
+	<script>
+	 (function () {
+	 var d = new Image(1, 1);
+	 d.onerror = d.onload = function () {
+	 d.onerror = d.onload = null;
+	 };
+	 d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-203014h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+	 })();
+	</script>
+	<noscript>
+	 <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-203014h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" style="display: none;" />
+	</noscript>
+<!-- End Nielsen 6.0 -->
+<!-- Start AppsFlyer -->
+<img src="https://app.appsflyer.com/id486154808?pid=ios_smart_banner&c=website_wu" height="1" width="1" border="0" style="display: none;" />
+<!-- End AppsFlyer -->
+		<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+		FB.init({
+		appId : wui.facebook.app_id,
+		channelUrl : wui.facebook.channel_url,
+		status : true,
+		cookie : true,
+		xfbml : true,
+		version : 'v2.0'
+		});
+		wui.facebook.on_load_trigger();
+		};
+		(function(d){
+		var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		ref.parentNode.insertBefore(js, ref);
+		}(document));
+	</script>
+	</body>
+</html>
