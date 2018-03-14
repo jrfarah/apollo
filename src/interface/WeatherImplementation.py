@@ -103,50 +103,12 @@ def getTempAndPrecip(year, month, day):
 	return int(day_of_year), max_temp, min_temp, precip, humidity
 
 
-
-
-
-prediction_dataset_list_snow = [[4, 30, 22], [361, 27, 19], [344, 38, 31], [33, 40, 29], [40, 18, 15]]
-prediction_dataset_list_nosnow = [[347, 36, 22], [348, 30, 19], [349, 27, 17]]
-
 automated_tests = []
 
 
 filepath = "../../training_sets/humidity_set_2016_2017.csv"
 names = ["Day of the year","High","low", "humidity", "Snow or not"]
 dataset = pandas.read_csv(filepath, names=names)
-# prediction = ClassificationNetv1.Predict(dataset, 3, [4, 30, 22])
-# print "Probability of precipitation on selected day: ", prediction
-
-# correct = 0
-# total = 0
-# for sets in prediction_dataset_list_snow:
-# 	prediction = ClassificationNetv1.Predict(dataset, 3, sets)
-# 	print "There should be snow on this day. We think that: "
-# 	if int(prediction) == 1:
-# 		print "there was."
-# 		correct += 1
-# 		total += 1
-# 	else:
-# 		print "there was not."
-# 		total += 1
-
-# for sets in prediction_dataset_list_nosnow:
-# 	prediction = ClassificationNetv1.Predict(dataset, 3, sets)
-# 	print "There should NOT be snow on this day. We think that: "
-# 	if int(prediction) == 1:
-# 		print "there was."
-# 		total+=1
-# 	else:
-# 		print "there was not."
-# 		correct+=1
-# 		total+=1
-
-# print "Total: ", total
-# print "Correct: ", correct
-# print "Percent correct: ", float(correct)/float(total)
-
-# getTempAndPrecip(2014,1,5)
 
 # n = number of days you want to test
 correct = 0
