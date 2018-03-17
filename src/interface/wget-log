@@ -1,0 +1,13 @@
+--2018-03-14 19:49:52--  https://www.wunderground.com/history/airport/KBOS/2011/5/2/DailyHistory.html
+Resolving www.wunderground.com (www.wunderground.com)... 23.52.167.36
+Connecting to www.wunderground.com (www.wunderground.com)|23.52.167.36|:443... connected.
+HTTP request sent, awaiting response... 200 ‘wget-log’
+Cookie coming from www.wunderground.com attempted to set domain to weather.com
+Length: unspecified [text/html]
+Saving to: ‘o.html’
+
+     0K .......... .......... .......... .......... .......... 2.33M
+    50K .......... .......... ........                         1.81M=0.04s
+
+2018-03-14 19:49:53 (2.11 MB/s) - ‘o.html’ saved [80345]
+

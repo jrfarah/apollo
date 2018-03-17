@@ -18,7 +18,7 @@ valve = ""
 import sys
 sys.path.insert(0, '../interface/')
 sys.path.insert(0, '../prep/')
-sys.path.insert(0, '../training/')
+sys.path.insert(0, '../training_sets/')
 
 # rest of the regular imports
 import 	numpy

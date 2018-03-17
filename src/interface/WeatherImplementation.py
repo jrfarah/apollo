@@ -1,4 +1,5 @@
-# this program will use past data to predict whether it will rain tomorrow
+# this program will use past data to predict whether it will rain tomorrow or on any given day of the year
+# example of the power of this wrapper
 
 import sys
 sys.path.insert(0, '../core/')
@@ -113,7 +114,7 @@ dataset = pandas.read_csv(filepath, names=names)
 # n = number of days you want to test
 correct = 0
 total = 0
-n = 50
+n = 1
 for i in range(n):
 	try:
 		y = random.randint(2008, 2016)
@@ -142,6 +143,10 @@ for test in automated_tests:
 		print "correct"
 		continue
 
-print "Total checked: ", total
-print "Total correct: ", correct
-print "Overall accuracy: ", float(correct)/float(total)
+# print "Total checked: ", total
+# print "Total correct: ", correct
+# print "Overall accuracy: ", float(correct)/float(total)
+
+print "Checking weather for next week: "
+prediction = ClassificationNetv1.Predict(dataset, 4, [80, 37, 27, 75])
+print prediction
