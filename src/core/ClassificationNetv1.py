@@ -94,9 +94,10 @@ def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation, scorin
 		results.append(cv_results)
 		names.append(name)
 		msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-		print(msg)
+		# print(msg)
 
 	(rate, best_model, name) = (max(success)[0], max(success)[1], max(success)[2])
+	print "{0} model is right {1} percent of the time.".format(name, rate*100)
 	return rate, best_model, name
 
 def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train):
