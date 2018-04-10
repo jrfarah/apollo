@@ -67,7 +67,7 @@ def IterativeApproximation(dset, test_vector, column_list, start_v=0, second_v=1
 		backup_column_list.append(element)
 	use_column_list = column_list
 	backup_dset = dset
-	print backup_column_list
+	# print backup_column_list
 	prediction_column = use_column_list[-1]
 
 	# delete it from the list of columns
