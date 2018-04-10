@@ -1,5 +1,5 @@
 # Apollo PRERELEASE EXPERIMENTATION REPO
-## Descripion: Wrapper for sklearn
+## Description: Wrapper for sklearn
 
 IF YOU ARE LOOKING TO INSTALL `apollo` YOU'VE COME TO THE WRONG PLACE. SEE `apollo_prod` or install with `pip`:
 
