@@ -31,6 +31,17 @@ import math
 import matplotlib.pyplot as plt
 
 # METHODS ########################################################################
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
 def getLowerBound(hist):
 
 	desirability = []
@@ -45,7 +56,7 @@ def getLowerBound(hist):
 	return min(min(probable_bounds), max(probable_bounds), key=abs)
 
 
-def IterativeApproximation(dset, test_vector, column_list, start_v, second_v, num_iter, show_graph=False):
+def IterativeApproximation(dset, test_vector, column_list, start_v=0, second_v=10, num_iter=25, show_graph=False):
 	''' coalesces the other functions into a single one, handles all program
 		inputs 
 	'''
@@ -134,9 +145,9 @@ def IterativeApproximation(dset, test_vector, column_list, start_v, second_v, nu
 		# down
 		# TODO: FIGURE OUT A WAY OF BETTER PICKING V
 		if boundaries[0] == -1*numpy.inf or boundaries[1] == numpy.inf:
-			v = 10*abs(v)
+			v = (2**(iteration))*abs(v)
 		else:
-			# if the boundaries are fine, find the average and use that as v
+			# if the boundaries are finite, find the average and use that as v
 			v = abs(boundaries[0]) + abs(boundaries[1])
 			v = float(abs(v/2))
 
@@ -154,7 +165,11 @@ def IterativeApproximation(dset, test_vector, column_list, start_v, second_v, nu
 		rotated = pandas.DataFrame.transpose(new_dataframe)
 
 		# check the output, is it greater than or less than v?
-		output = ClassificationNetv1.Predict(rotated, len(test_vector), test_vector)
+		try:
+			output = ClassificationNetv1.Predict(rotated, len(test_vector), test_vector)
+		except ValueError:
+			print bcolors.WARNING+"WARNING: It's possible that the dataset is not resolved enough at the value Apollo thinks the output should be. He'll give you his best guess after only {0} iterations!".format(iteration)+ bcolors.ENDC
+			break
 
 		# does the net think the output will be larger or smaller than the bound?
 		# if the output is larger (1) make the V value the new lower bound
@@ -168,15 +183,15 @@ def IterativeApproximation(dset, test_vector, column_list, start_v, second_v, nu
 
 	lower_bound = getLowerBound(history_of_boundaries)
 
-	print lower_bound
+	# print lower_bound
 
-	print backup_column_list
+	# print backup_column_list
 
 	del column_list[-1]
 
 	column_list.append(backup_column_list)
 
-	(boundaries, history_of_boundaries) = IterativeApproximationFinite(dset, test_vector, column_list, lower_bound, 20, sign, show_graph=True)
+	# (boundaries, history_of_boundaries) = IterativeApproximationFinite(dset, test_vector, column_list, lower_bound, 20, sign, show_graph=True)
 
 	# if show_graph == True:
 	# 	plt.plot(history_of_boundaries)
@@ -189,11 +204,11 @@ def IterativeApproximationFinite(dset, test_vector, column_list, lower_bound, nu
 	''' coalesces the other functions into a single one, handles all program
 		inputs 
 	'''
-	print dset
+	# print dset
 	# save the important column from the list of columns
 	prediction_column = column_list[-1]
-	print column_list
-	print prediction_column
+	# print column_list
+	# print prediction_column
 
 	# delete it from the list of columns
 	del column_list[-1]
