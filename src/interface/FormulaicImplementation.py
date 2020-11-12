@@ -12,4 +12,4 @@ import ClassificationNetv1
 # put the table into a PANDAS dataset object
 dataset = DataFormatterv1.Format("../../training_sets/FormulaicDataset.csv")
 
-print ClassificationNetv1.Predict(dataset, 3, [-45, 2, -7])
+print (ClassificationNetv1.Predict(dataset, 3, [-45, 2, -7]))

@@ -46,12 +46,12 @@ def getLowerBound(hist):
 
 	desirability = []
 	for point in hist:
-		print point
+		print( point)
 		desirability.append(1/(((point[1]-point[0]))*((hist.index(point)-3.5)**10))) # old 7.5
 
 	probable_bounds = hist[desirability.index(max(desirability[1:]))]
 
-	print "It is most likely on this range: ", probable_bounds
+	print( "It is most likely on this range: ", probable_bounds)
 
 	return min(min(probable_bounds), max(probable_bounds), key=abs)
 
@@ -67,7 +67,7 @@ def IterativeApproximation(dset, test_vector, column_list, start_v=0, second_v=1
 		backup_column_list.append(element)
 	use_column_list = column_list
 	backup_dset = dset
-	# print backup_column_list
+	# print( backup_column_list)
 	prediction_column = use_column_list[-1]
 
 	# delete it from the list of columns
@@ -168,7 +168,7 @@ def IterativeApproximation(dset, test_vector, column_list, start_v=0, second_v=1
 		try:
 			output = ClassificationNetv1.Predict(rotated, len(test_vector), test_vector)
 		except ValueError:
-			print bcolors.WARNING+"WARNING: It's possible that the dataset is not resolved enough at the value Apollo thinks the output should be. He'll give you his best guess after only {0} iterations!".format(iteration)+ bcolors.ENDC
+			print( bcolors.WARNING+"WARNING: It's possible that the dataset is not resolved enough at the value Apollo thinks the output should be. He'll give you his best guess after only {0} iterations!".format(iteration)+ bcolors.ENDC)
 			break
 
 		# does the net think the output will be larger or smaller than the bound?
@@ -183,9 +183,9 @@ def IterativeApproximation(dset, test_vector, column_list, start_v=0, second_v=1
 
 	lower_bound = getLowerBound(history_of_boundaries)
 
-	# print lower_bound
+	# print( lower_bound)
 
-	# print backup_column_list
+	# print( backup_column_list)
 
 	del column_list[-1]
 
@@ -204,11 +204,11 @@ def IterativeApproximationFinite(dset, test_vector, column_list, lower_bound, nu
 	''' coalesces the other functions into a single one, handles all program
 		inputs 
 	'''
-	# print dset
+	# print( dset)
 	# save the important column from the list of columns
 	prediction_column = column_list[-1]
-	# print column_list
-	# print prediction_column
+	# print( column_list)
+	# print( prediction_column)
 
 	# delete it from the list of columns
 	del column_list[-1]

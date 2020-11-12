@@ -43,7 +43,7 @@ from 	sklearn 						import svm
 def getValidation(dset, prediction_column_index, v_size):
 	'''	extract a validation dataset from the full one
 	'''
-	print type(dset)
+	print( type(dset))
 	reduced_dataset = dset.values
 
 	# split the array into two arrays--one containing the contemplation information and the other containing the information we want to predict
@@ -52,8 +52,8 @@ def getValidation(dset, prediction_column_index, v_size):
 	contemplation_columns 	= numpy.delete(	reduced_dataset, 
 											prediction_column_index, 
 											axis = 1 )
-	# print prediction_column 	# PC
-	# print contemplation_columns	# CC
+	# print( prediction_column 	# PC)
+	# print( contemplation_columns	# CC)
 
 	# percentage of data to be used for validation
 	validation_size = v_size
@@ -87,20 +87,20 @@ def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation, scorin
 	names 	= []
 	for name, model in models:
 		# test the models on a subset of the dataset
-		kfold 		= model_selection.KFold(n_splits=10, random_state=seed)
+		kfold 		= model_selection.KFold(n_splits=10, random_state=seed, shuffle=True)
 		cv_results 	= model_selection.cross_val_score(model, CC_train, PC_train, cv=kfold, scoring=scoring)
 		# calculate the success of the model (weighted success)
-		success.append((1-float((1/(cv_results.mean()/cv_results.std()))), model, name))
+		success.append({'rate':1-float((1/(cv_results.mean()/cv_results.std()))), 'model':model, 'name':name})
 		results.append(cv_results)
 		names.append(name)
 		msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-		# print(msg)
+		# print((msg))
 
-	(rate, best_model, name) = (max(success)[0], max(success)[1], max(success)[2])
-	print "{0} model is right {1} percent of the time.".format(name, rate*100)
+	(rate, best_model, name) = (max(success, key=lambda x:x['rate'])['rate'], max(success, key=lambda x:x['rate'])['model'], max(success, key=lambda x:x['rate'])['name'])
+	print( "{0} model is right {1} percent of the time.".format(name, rate*100))
 	return rate, best_model, name
 
-def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train):
+def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train, return_model=False):
 	''' generates the neural net and thinks about the data '''
 
 	# generates the neural network based on the best mdoel
@@ -108,6 +108,9 @@ def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train):
 
 	# trains the neural network
 	neurNet.fit(CC_train, PC_train)
+
+	if return_model:
+		return neurNet
 
 	# formats the prediction set into a numpy array and reshapes it
 	prediction_set = numpy.array(prediction_set).reshape(1,-1)
@@ -118,7 +121,7 @@ def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train):
 	return predictions
 
 
-def Predict(dset, prediction_column_index, prediction_set, val_size=0.2):
+def Predict(dset, prediction_column_index, prediction_set, val_size=0.2, return_model=False):
 	'''	coalesces all of the other functions into one thing; 
 		will return prediction
 	'''
@@ -127,6 +130,9 @@ def Predict(dset, prediction_column_index, prediction_set, val_size=0.2):
 
 	# spot check the various algorithms to determine the best model for use in this case
 	(rate, best_model, name) = spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation)
+
+	if return_model:
+		return (rate, spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train, return_model=return_model), name)
 
 	# think 
 	result = spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train)

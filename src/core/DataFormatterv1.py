@@ -52,5 +52,5 @@ def Format(filepath, names=False):
 	num_column = getNumberOfColumns(filepath)
 	if names == False:
 		names = generateNames(num_column)
-	print names, filepath
+	print( names, filepath)
 	return pandas.read_csv(filepath, names=names)
