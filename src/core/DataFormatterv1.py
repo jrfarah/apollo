@@ -7,7 +7,7 @@
 # from there every part of this will be expanded and customized
 #
 # things that are passed into the function: 
-# - dataset, array of names?, predidction set, prediction column index
+# - dataset, array of names?, prediction set, prediction column index
 ###################################################################################
 
 # add filepaths to sys path import
@@ -21,6 +21,9 @@ import 	os
 import 	numpy
 import 	pandas
 import 	matplotlib.pyplot as plt
+
+# Controls print statements
+VERBOSE_FLAG = True
 
 # METHODS ########################################################################
 
@@ -52,5 +55,6 @@ def Format(filepath, names=False):
 	num_column = getNumberOfColumns(filepath)
 	if names == False:
 		names = generateNames(num_column)
-	print( names, filepath)
+	if VERBOSE_FLAG:
+		print( names, filepath)
 	return pandas.read_csv(filepath, names=names)

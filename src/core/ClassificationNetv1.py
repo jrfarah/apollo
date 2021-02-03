@@ -7,7 +7,7 @@
 # from there every part of this will be expanded and customized
 #
 # things that are passed into the function: 
-# - dataset, array of names?, predidction set, prediction column index
+# - dataset, array of names?, prediction set, prediction column index
 ###################################################################################
 
 valve = ""
@@ -37,6 +37,10 @@ from 	sklearn.naive_bayes 			import GaussianNB
 from 	sklearn.svm 					import SVC
 from 	sklearn 						import linear_model
 from 	sklearn 						import svm
+
+MACHINE_EPSILON = numpy.finfo(float).eps
+# Controls print statements
+VERBOSE_FLAG = True
 
 # METHODS ########################################################################
 
@@ -90,14 +94,15 @@ def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation, scorin
 		kfold 		= model_selection.KFold(n_splits=10, random_state=seed, shuffle=True)
 		cv_results 	= model_selection.cross_val_score(model, CC_train, PC_train, cv=kfold, scoring=scoring)
 		# calculate the success of the model (weighted success)
-		success.append({'rate':1-float((1/(cv_results.mean()/cv_results.std()))), 'model':model, 'name':name})
+		success.append({'rate':1-float(cv_results.std()/cv_results.mean()), 'model':model, 'name':name})
 		results.append(cv_results)
 		names.append(name)
-		msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+		# msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
 		# print((msg))
 
 	(rate, best_model, name) = (max(success, key=lambda x:x['rate'])['rate'], max(success, key=lambda x:x['rate'])['model'], max(success, key=lambda x:x['rate'])['name'])
-	print( "{0} model is right {1} percent of the time.".format(name, rate*100))
+	if VERBOSE_FLAG:
+		print( "{0} model is right {1} percent of the time.".format(name, rate*100))
 	return rate, best_model, name
 
 def spawnNeuralNet(rate, best_model, prediction_set, CC_train, PC_train, return_model=False):
