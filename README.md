@@ -20,6 +20,6 @@ Download this repo if you want to see whatever crazy crap I'm working on. I can'
 
 - `src`: Contains the important stuff
  - `core`: the modules. Most of this stuff will be in Apollo releases. 
- - `interface`: where I test stuff out, implement things. if I write a gui it will probably go in here.
+ - `interface`: where I test stuff out, implement things. If I write a GUI it will probably go in here.
 
 - `training_sets`: csvs and .datas that the `interface` folder accesses. 
