@@ -75,7 +75,7 @@ def spotCheckAlgorithms(CC_train, CC_validation, PC_train, PC_validation, scorin
 	models.append(('KNN', 	KNeighborsClassifier()))
 	models.append(('CART', 	DecisionTreeClassifier()))
 	models.append(('NB', 	GaussianNB()))
-	models.append(('SVM', 	SVC()))
+	# models.append(('SVM', 	SVC()))
 
 	seed = 7
 
